@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CarParkProject.Repository\CarParkProject.Repository.csproj" />
+    <ProjectReference Include="..\CarParkProject.Domain\CarParkProject.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Concreate\" />
+    <Folder Include="ValidationRules\" />
+  </ItemGroup>
+
+</Project>

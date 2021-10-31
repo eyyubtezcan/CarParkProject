@@ -1,0 +1,116 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "CarParkProject.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CarParkProject.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarParkProject.Domain.dll": {}
+        }
+      },
+      "CarParkProject.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CarParkProject.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarParkProject.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CarParkProject.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CarParkProject.Domain/CarParkProject.Domain.csproj",
+      "msbuildProject": "../CarParkProject.Domain/CarParkProject.Domain.csproj"
+    },
+    "CarParkProject.Repository/1.0.0": {
+      "type": "project",
+      "path": "../../CarParkProject.Repository/CarParkProject.Repository.csproj",
+      "msbuildProject": "../../CarParkProject.Repository/CarParkProject.Repository.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "CarParkProject.Domain >= 1.0.0",
+      "CarParkProject.Repository >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Eyyub-Desktop\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\LearningProjects\\CarParkProject\\CarParkProject.Service\\CarParkProject.Service.csproj",
+      "projectName": "CarParkProject.Service",
+      "projectPath": "E:\\LearningProjects\\CarParkProject\\CarParkProject.Service\\CarParkProject.Service.csproj",
+      "packagesPath": "C:\\Users\\Eyyub-Desktop\\.nuget\\packages\\",
+      "outputPath": "E:\\LearningProjects\\CarParkProject\\CarParkProject.Service\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Eyyub-Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "E:\\LearningProjects\\CarParkProject.Repository\\CarParkProject.Repository.csproj": {
+              "projectPath": "E:\\LearningProjects\\CarParkProject.Repository\\CarParkProject.Repository.csproj"
+            },
+            "E:\\LearningProjects\\CarParkProject\\CarParkProject.Domain\\CarParkProject.Domain.csproj": {
+              "projectPath": "E:\\LearningProjects\\CarParkProject\\CarParkProject.Domain\\CarParkProject.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

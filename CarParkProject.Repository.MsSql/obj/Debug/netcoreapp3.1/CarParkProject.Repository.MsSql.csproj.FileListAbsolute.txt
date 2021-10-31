@@ -1,0 +1,5 @@
+E:\LearningProjects\CarParkProject\CarParkProject.Repository.MsSql\bin\Debug\netcoreapp3.1\CarParkProject.Data.dll
+E:\LearningProjects\CarParkProject\CarParkProject.Repository.MsSql\bin\Debug\netcoreapp3.1\CarParkProject.Domain.dll
+E:\LearningProjects\CarParkProject\CarParkProject.Repository.MsSql\bin\Debug\netcoreapp3.1\CarParkProject.Repository.dll
+E:\LearningProjects\CarParkProject\CarParkProject.Repository.MsSql\obj\Debug\netcoreapp3.1\CarParkProject.Repository.MsSql.AssemblyInfoInputs.cache
+E:\LearningProjects\CarParkProject\CarParkProject.Repository.MsSql\obj\Debug\netcoreapp3.1\CarParkProject.Repository.MsSql.AssemblyInfo.cs
