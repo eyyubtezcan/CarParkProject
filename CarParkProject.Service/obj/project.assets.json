@@ -21,16 +21,6 @@
         "runtime": {
           "bin/placeholder/CarParkProject.Domain.dll": {}
         }
-      },
-      "CarParkProject.Repository/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/CarParkProject.Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CarParkProject.Repository.dll": {}
-        }
       }
     }
   },
@@ -44,18 +34,12 @@
       "type": "project",
       "path": "../CarParkProject.Domain/CarParkProject.Domain.csproj",
       "msbuildProject": "../CarParkProject.Domain/CarParkProject.Domain.csproj"
-    },
-    "CarParkProject.Repository/1.0.0": {
-      "type": "project",
-      "path": "../../CarParkProject.Repository/CarParkProject.Repository.csproj",
-      "msbuildProject": "../../CarParkProject.Repository/CarParkProject.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "CarParkProject.Core >= 1.0.0",
-      "CarParkProject.Domain >= 1.0.0",
-      "CarParkProject.Repository >= 1.0.0"
+      "CarParkProject.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -92,9 +76,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\LearningProjects\\CarParkProject.Repository\\CarParkProject.Repository.csproj": {
-              "projectPath": "E:\\LearningProjects\\CarParkProject.Repository\\CarParkProject.Repository.csproj"
-            },
             "E:\\LearningProjects\\CarParkProject\\CarParkProject.Core\\CarParkProject.Core.csproj": {
               "projectPath": "E:\\LearningProjects\\CarParkProject\\CarParkProject.Core\\CarParkProject.Core.csproj"
             },

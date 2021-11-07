@@ -1,0 +1,11 @@
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\bin\Debug\net5.0\CarParkProject.Domain.deps.json
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\bin\Debug\net5.0\CarParkProject.Domain.dll
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\bin\Debug\net5.0\ref\CarParkProject.Domain.dll
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\bin\Debug\net5.0\CarParkProject.Domain.pdb
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\CarParkProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\CarParkProject.Domain.AssemblyInfoInputs.cache
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\CarParkProject.Domain.AssemblyInfo.cs
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\CarParkProject.Domain.csproj.CoreCompileInputs.cache
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\CarParkProject.Domain.dll
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\ref\CarParkProject.Domain.dll
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\CarParkProject.Domain.pdb

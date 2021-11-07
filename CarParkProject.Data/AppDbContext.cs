@@ -15,9 +15,13 @@ namespace CarParkProject.Data
         {
 
         }
+        //Settings
         public DbSet<Config> Config { get; set; }
+        
+        //Customer
         public DbSet<Customer> Customers { get; set; }
 
+        //Vehicle
         public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<VehicleBrand> VehicleBrands { get; set; }
         public DbSet<VehicleCategory> VehicleCategories { get; set; }
@@ -25,8 +29,9 @@ namespace CarParkProject.Data
         public DbSet<VehicleFuelType> VehicleFuelTypes { get; set; }
         public DbSet<VehicleModel> VehicleModels { get; set; }
 
-       
+        //Manage
         public DbSet<Ticket> Tickets{ get; set; }
+        public DbSet<TicketStatus> TicketStatuses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

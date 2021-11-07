@@ -13,7 +13,7 @@ namespace CarParkProject.Data.Configurations
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).UseIdentityColumn();
-            builder.Property(x => x.PlateNumber).IsRequired().HasMaxLength(8);
+            builder.Property(x => x.LicenceNumber).IsRequired().HasMaxLength(8);
             builder.Property(x => x.ChassisNumber).IsRequired().HasMaxLength(17);
             builder.Property(x => x.ColorId).IsRequired();
             builder.Property(x => x.FuelTypeId).IsRequired();
