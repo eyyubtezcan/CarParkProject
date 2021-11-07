@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace CarParkProject.Data.Repositories.Abstract
+namespace CarParkProject.Data.Core.Abstract
 {
     public interface IRepository<TEntity> where TEntity : class
     {

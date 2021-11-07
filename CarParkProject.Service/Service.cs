@@ -1,4 +1,4 @@
-﻿using CarParkProject.Repository;
+﻿using CarParkProject.Data.Core.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -11,7 +11,6 @@ namespace CarParkProject.Service
     {
         public readonly IUnitOfWork _unitOfWork;
         private readonly IRepository<TEntity> _repository;
-  
 
         public Service(IUnitOfWork unitOfWork, IRepository<TEntity> repository)
         {

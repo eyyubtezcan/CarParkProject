@@ -1520,6 +1520,16 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "CarParkProject.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CarParkProject.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarParkProject.Core.dll": {}
+        }
+      },
       "CarParkProject.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5798,6 +5808,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "CarParkProject.Core/1.0.0": {
+      "type": "project",
+      "path": "../CarParkProject.Core/CarParkProject.Core.csproj",
+      "msbuildProject": "../CarParkProject.Core/CarParkProject.Core.csproj"
+    },
     "CarParkProject.Domain/1.0.0": {
       "type": "project",
       "path": "../CarParkProject.Domain/CarParkProject.Domain.csproj",
@@ -5806,6 +5821,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "CarParkProject.Core >= 1.0.0",
       "CarParkProject.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.11",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.11",
@@ -5847,6 +5863,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "E:\\LearningProjects\\CarParkProject\\CarParkProject.Core\\CarParkProject.Core.csproj": {
+              "projectPath": "E:\\LearningProjects\\CarParkProject\\CarParkProject.Core\\CarParkProject.Core.csproj"
+            },
             "E:\\LearningProjects\\CarParkProject\\CarParkProject.Domain\\CarParkProject.Domain.csproj": {
               "projectPath": "E:\\LearningProjects\\CarParkProject\\CarParkProject.Domain\\CarParkProject.Domain.csproj"
             }
