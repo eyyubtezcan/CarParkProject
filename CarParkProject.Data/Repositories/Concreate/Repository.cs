@@ -12,16 +12,19 @@ namespace CarParkProject.Data.Repositories.Concreate
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
 
     {
-        protected readonly DbContext _context;
+        protected readonly AppDbContext _context;
         private readonly DbSet<TEntity> _dbSet;
         public Repository(AppDbContext context)
         {
             _context = context;
             _dbSet = context.Set<TEntity>();
         }
+    
         public async Task AddAsync(TEntity entity)
         {
+   
             await _dbSet.AddAsync(entity);
+            await _context.SaveChangesAsync();
         }
         public async Task AddRangeAsync(IEnumerable<TEntity> entities)
         {

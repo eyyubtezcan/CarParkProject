@@ -9,25 +9,25 @@ namespace CarParkProject.Service
 {
     public class Service<TEntity> : IService<TEntity> where TEntity : class
     {
-        public readonly IUnitOfWork _unitOfWork;
+     //   public readonly IUnitOfWork _unitOfWork;
         private readonly IRepository<TEntity> _repository;
-
-        public Service(IUnitOfWork unitOfWork, IRepository<TEntity> repository)
+    //    public Service(IUnitOfWork unitOfWork, IRepository<TEntity> repository)
+        public Service(IRepository<TEntity> repository)
         {
-            _unitOfWork = unitOfWork;
+           // _unitOfWork = unitOfWork;
             _repository = repository;
         }
         public async Task<TEntity> AddAsync(TEntity entity)
         {
             await _repository.AddAsync(entity);
-            await _unitOfWork.CommitAsync();
+         //   await _unitOfWork.CommitAsync();
             return entity;
         }
 
         public async Task<IEnumerable<TEntity>> AddRangeAsync(IEnumerable<TEntity> entities)
         {
             await _repository.AddRangeAsync(entities);
-            await _unitOfWork.CommitAsync();
+          //  await _unitOfWork.CommitAsync();
             return entities;
         }
 
@@ -44,13 +44,13 @@ namespace CarParkProject.Service
         public void Remove(TEntity entity)
         {
             _repository.Remove(entity);
-            _unitOfWork.Commit();
+        //    _unitOfWork.Commit();
         }
 
         public void RemoveRange(IEnumerable<TEntity> entities)
         {
             _repository.RemoveRange(entities);
-            _unitOfWork.Commit();
+      //      _unitOfWork.Commit();
         }
 
         public async Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate)
@@ -61,7 +61,7 @@ namespace CarParkProject.Service
         public TEntity Update(TEntity entity)
         {
             TEntity updateEntity = _repository.Update(entity);
-            _unitOfWork.Commit();
+        //    _unitOfWork.Commit();
             return updateEntity;
         }
 

@@ -1,4 +1,11 @@
 using CarParkProject.Data;
+using CarParkProject.Data.Core.Abstract;
+using CarParkProject.Data.Repositories.Abstract;
+using CarParkProject.Data.Repositories.Concreate;
+using CarParkProject.Data.UnitOfWorks;
+using CarParkProject.Service;
+using CarParkProject.Service.Abstract;
+using CarParkProject.Service.Concreate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +35,23 @@ namespace CarParkProject.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
+            services.AddSingleton(typeof(IRepository<>), typeof(Repository<>));
+            services.AddSingleton(typeof(IService<>), typeof(Service<>));
+
+            #region Repositories
+           
+            services.AddScoped<IVehicleRepository, VehicleRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            #endregion
+
+            #region Services
+            services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IVehicleService, VehicleService>();
+            #endregion
+
+            services.AddControllers();
+            //services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -35,8 +59,15 @@ namespace CarParkProject.API
                     o.MigrationsAssembly("CarParkProject.Data");
                 });
             });
+            
+            //services.AddSingleton(typeof(IRepository<>), typeof(Repository<>));
+            //services.AddSingleton(typeof(IService<>), typeof(Service<>));
+            //services.AddSingleton<IVehicleRepository, VehicleRepository>();
 
-            services.AddControllers();
+            //services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            //services.AddScoped(typeof(IService<>), typeof(Service<>));
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CarParkProject.API", Version = "v1" });
@@ -64,6 +95,7 @@ namespace CarParkProject.API
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }

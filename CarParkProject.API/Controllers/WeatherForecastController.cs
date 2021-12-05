@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CarParkProject.Service.Abstract;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace CarParkProject.API.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        private readonly IVehicleService _vehicleService;
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -18,8 +20,9 @@ namespace CarParkProject.API.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {           
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IVehicleService vehicleService)
+        {
+            _vehicleService = vehicleService;
             _logger = logger;
         }
 
@@ -27,6 +30,7 @@ namespace CarParkProject.API.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
+            var vehicles =  _vehicleService.GetAllVehiclesAsync();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),

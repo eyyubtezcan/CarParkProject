@@ -15,7 +15,7 @@ namespace CarParkProject.Domain.EntityModels
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string Address{ get; set; } //Later will split with addresses entitymodel
-        public ICollection<Vehicle> Vehicles{ get; set; }
-        public ICollection<Ticket> Tickets { get; set; }
+        //public ICollection<Vehicle> Vehicles{ get; set; }
+        //public ICollection<Ticket> Tickets { get; set; }
     }
 }

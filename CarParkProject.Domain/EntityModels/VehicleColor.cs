@@ -12,7 +12,7 @@ namespace CarParkProject.Domain.EntityModels
     {
         public string Description { get; set; }
         public string Code { get; set; }
-
+        public ICollection<Vehicle> Vehicles { get; set; }
 
 
     }

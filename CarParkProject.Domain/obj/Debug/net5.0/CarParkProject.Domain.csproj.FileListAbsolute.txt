@@ -9,3 +9,4 @@ E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\CarPar
 E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\CarParkProject.Domain.dll
 E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\ref\CarParkProject.Domain.dll
 E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\CarParkProject.Domain.pdb
+E:\LearningProjects\CarParkProject\CarParkProject.Domain\obj\Debug\net5.0\CarParkProject.Domain.csprojAssemblyReference.cache

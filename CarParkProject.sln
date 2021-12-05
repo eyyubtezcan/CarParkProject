@@ -5,19 +5,13 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarParkProject.API", "CarParkProject.API\CarParkProject.API.csproj", "{933EC848-778B-4C46-BD0C-8BF3F809E305}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarParkProject.Core", "CarParkProject.Core\CarParkProject.Core.csproj", "{BF944DB2-25FE-445D-BBE0-35FF31BABB48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarParkProject.Core", "CarParkProject.Core\CarParkProject.Core.csproj", "{BF944DB2-25FE-445D-BBE0-35FF31BABB48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarParkProject.Data", "CarParkProject.Data\CarParkProject.Data.csproj", "{04E9481C-EBDF-444A-AA77-A15B6098B78C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarParkProject.Data", "CarParkProject.Data\CarParkProject.Data.csproj", "{04E9481C-EBDF-444A-AA77-A15B6098B78C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarParkProject.Domain", "CarParkProject.Domain\CarParkProject.Domain.csproj", "{543720F6-8FD0-49CC-ACBB-4FF053376042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarParkProject.Domain", "CarParkProject.Domain\CarParkProject.Domain.csproj", "{543720F6-8FD0-49CC-ACBB-4FF053376042}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarParkProject.Helper", "CarParkProject.Helper\CarParkProject.Helper.csproj", "{954534A4-03A7-45F6-BAD3-116E0880F795}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarParkProject.Service", "CarParkProject.Service\CarParkProject.Service.csproj", "{A7B8BF44-E439-4391-A35A-C94F00B1EAF5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarParkProject.Repository", "..\CarParkProject.Repository\CarParkProject.Repository.csproj", "{A7858B06-9FE0-4C9E-8E79-A825E1853E36}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarParkProject.Repository.MsSql", "CarParkProject.Repository.MsSql\CarParkProject.Repository.MsSql.csproj", "{5DBA6F4F-7F3D-426F-98A0-820FFB1EDFAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarParkProject.Service", "CarParkProject.Service\CarParkProject.Service.csproj", "{A7B8BF44-E439-4391-A35A-C94F00B1EAF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,22 +35,10 @@ Global
 		{543720F6-8FD0-49CC-ACBB-4FF053376042}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{543720F6-8FD0-49CC-ACBB-4FF053376042}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{543720F6-8FD0-49CC-ACBB-4FF053376042}.Release|Any CPU.Build.0 = Release|Any CPU
-		{954534A4-03A7-45F6-BAD3-116E0880F795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{954534A4-03A7-45F6-BAD3-116E0880F795}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{954534A4-03A7-45F6-BAD3-116E0880F795}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{954534A4-03A7-45F6-BAD3-116E0880F795}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A7B8BF44-E439-4391-A35A-C94F00B1EAF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A7B8BF44-E439-4391-A35A-C94F00B1EAF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7B8BF44-E439-4391-A35A-C94F00B1EAF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7B8BF44-E439-4391-A35A-C94F00B1EAF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A7858B06-9FE0-4C9E-8E79-A825E1853E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7858B06-9FE0-4C9E-8E79-A825E1853E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7858B06-9FE0-4C9E-8E79-A825E1853E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7858B06-9FE0-4C9E-8E79-A825E1853E36}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5DBA6F4F-7F3D-426F-98A0-820FFB1EDFAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DBA6F4F-7F3D-426F-98A0-820FFB1EDFAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DBA6F4F-7F3D-426F-98A0-820FFB1EDFAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DBA6F4F-7F3D-426F-98A0-820FFB1EDFAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

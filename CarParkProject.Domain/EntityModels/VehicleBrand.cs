@@ -11,7 +11,6 @@ namespace CarParkProject.Domain.EntityModels
     public class VehicleBrand : BaseEntity
     {
         public string Description { get; set; }
-        public ICollection<Vehicle> Vehicles{ get; set; }
         public ICollection<VehicleModel> VehicleModels{ get; set; }
 
     }

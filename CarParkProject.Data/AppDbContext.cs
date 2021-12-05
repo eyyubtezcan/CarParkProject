@@ -1,10 +1,13 @@
 ﻿using CarParkProject.Data.Configurations;
 using CarParkProject.Data.Seeds;
 using CarParkProject.Domain.EntityModels;
+using CarParkProject.Domain.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Text;
+
 
 namespace CarParkProject.Data
 {
@@ -20,7 +23,7 @@ namespace CarParkProject.Data
         
         //Customer
         public DbSet<Customer> Customers { get; set; }
-
+        public DbQuery<CustomerVM> CustomerView { get; set; }
         //Vehicle
         public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<VehicleBrand> VehicleBrands { get; set; }

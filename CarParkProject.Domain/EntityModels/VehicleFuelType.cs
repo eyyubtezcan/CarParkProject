@@ -10,7 +10,7 @@ namespace CarParkProject.Domain.EntityModels
     public class VehicleFuelType : BaseEntity
     {
         public string Description { get; set; }
-      
+        public ICollection<Vehicle> Vehicles { get; set; }
 
     }
 }

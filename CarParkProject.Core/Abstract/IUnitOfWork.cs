@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CarParkProject.Data.Core.Abstract
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork :IDisposable
     {
         Task CommitAsync();
         void Commit();

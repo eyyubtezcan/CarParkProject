@@ -15,3 +15,8 @@ E:\LearningProjects\CarParkProject\CarParkProject.Service\obj\Debug\net5.0\CarPa
 E:\LearningProjects\CarParkProject\CarParkProject.Service\obj\Debug\net5.0\CarParkProject.Service.dll
 E:\LearningProjects\CarParkProject\CarParkProject.Service\obj\Debug\net5.0\ref\CarParkProject.Service.dll
 E:\LearningProjects\CarParkProject\CarParkProject.Service\obj\Debug\net5.0\CarParkProject.Service.pdb
+E:\LearningProjects\CarParkProject\CarParkProject.Service\bin\Debug\net5.0\CarParkProject.Data.dll
+E:\LearningProjects\CarParkProject\CarParkProject.Service\bin\Debug\net5.0\CarParkProject.Data.pdb
+E:\LearningProjects\CarParkProject\CarParkProject.Service\bin\Debug\net5.0\CarParkProject.Service.runtimeconfig.json
+E:\LearningProjects\CarParkProject\CarParkProject.Service\bin\Debug\net5.0\CarParkProject.Service.runtimeconfig.dev.json
+E:\LearningProjects\CarParkProject\CarParkProject.Service\obj\Debug\net5.0\CarParkProject.Service.genruntimeconfig.cache

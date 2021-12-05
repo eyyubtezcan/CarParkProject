@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Abstract\IUnitOfWork.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Concreate\" />
     <Folder Include="ValidationRules\" />
   </ItemGroup>

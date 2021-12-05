@@ -6,11 +6,16 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CarParkProject.Core\CarParkProject.Core.csproj" />
+    <ProjectReference Include="..\CarParkProject.Data\CarParkProject.Data.csproj" />
     <ProjectReference Include="..\CarParkProject.Domain\CarParkProject.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="ValidationRules\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 
 </Project>

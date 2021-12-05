@@ -15,5 +15,6 @@ namespace CarParkProject.Domain.EntityModels
         public int CategoryId { get; set; }
         public virtual VehicleBrand Brand { get; set; }
         public virtual VehicleCategory Category { get; set; }
+   
     }
 }
