@@ -1,4 +1,4 @@
-﻿using CarParkProject.Data.Core.Abstract;
+﻿using CarParkProject.Core.Abstract;
 using CarParkProject.Data.Repositories.Abstract;
 using Microsoft.EntityFrameworkCore;
 using System;

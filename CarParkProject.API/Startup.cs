@@ -1,5 +1,5 @@
 using CarParkProject.Data;
-using CarParkProject.Data.Core.Abstract;
+using CarParkProject.Core.Abstract;
 using CarParkProject.Data.Repositories.Abstract;
 using CarParkProject.Data.Repositories.Concreate;
 using CarParkProject.Data.UnitOfWorks;
@@ -36,8 +36,10 @@ namespace CarParkProject.API
         public void ConfigureServices(IServiceCollection services)
         {
             
-            services.AddSingleton(typeof(IRepository<>), typeof(Repository<>));
-            services.AddSingleton(typeof(IService<>), typeof(Service<>));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IService<>), typeof(Service<>));
+
+
 
             #region Repositories
            

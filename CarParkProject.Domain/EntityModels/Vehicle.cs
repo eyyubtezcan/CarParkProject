@@ -18,10 +18,13 @@ namespace CarParkProject.Domain.EntityModels
         public int FuelTypeId { get; set; }
         public int ModelId { get; set; }
         public int CustomerId { get; set; }
+        //[NotMapped]
         //public virtual Customer Customer{ get; set; }
+        //[NotMapped]
         //public virtual VehicleModel Model { get; set; }
-
+        //[NotMapped]
         //public virtual VehicleColor Color { get; set; }
+        //[NotMapped]
         //public virtual VehicleFuelType FuelType { get; set; }
 
 

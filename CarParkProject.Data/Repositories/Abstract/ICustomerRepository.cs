@@ -1,4 +1,4 @@
-﻿using CarParkProject.Data.Core.Abstract;
+﻿using CarParkProject.Core.Abstract;
 using CarParkProject.Domain.EntityModels;
 using System;
 using System.Collections.Generic;

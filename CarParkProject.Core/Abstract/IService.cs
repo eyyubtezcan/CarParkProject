@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarParkProject.Data.Core.Abstract
+namespace CarParkProject.Core.Abstract
 {
     public interface IService<TEntity> where TEntity:class
     {

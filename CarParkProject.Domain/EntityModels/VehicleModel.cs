@@ -13,7 +13,9 @@ namespace CarParkProject.Domain.EntityModels
         public string Description { get; set; }
         public int BrandId { get; set; }
         public int CategoryId { get; set; }
+        [NotMapped]
         public virtual VehicleBrand Brand { get; set; }
+        [NotMapped]
         public virtual VehicleCategory Category { get; set; }
    
     }
