@@ -16,6 +16,7 @@ namespace CarParkProject.Service.Abstract
         ServiceResult<List<VehicleBrand>> GetVehicleBrands();
         ServiceResult<List<VehicleModel>> GetVehicleModels();
         ServiceResult<List<VehicleCategory>> GetVehicleCategories();
+
         
     }
 }

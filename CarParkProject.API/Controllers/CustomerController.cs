@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace CarParkProject.API.Controllers
 {
@@ -16,6 +17,7 @@ namespace CarParkProject.API.Controllers
 
     public class CustomerController : BaseController
     {
+       // private ILoggerManager _logger;
         ICustomerService _CustomerService;
 
         public CustomerController(ICustomerService CustomerService)
@@ -49,7 +51,7 @@ namespace CarParkProject.API.Controllers
         {
 
 
-            return _CustomerService.AddCustomer(customer);
+            return _CustomerService.Customer(customer);
         }
 
     }

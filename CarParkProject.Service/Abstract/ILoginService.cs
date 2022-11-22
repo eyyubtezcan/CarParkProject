@@ -9,9 +9,7 @@ namespace CarParkProject.Service.Abstract
 {
     public interface ILoginService
     {
-       bool Login(LoginVM user);
-
-
-
+        ServiceResult<User> Login(LoginVM model);
+        ServiceResult<bool> IsLoggedIn(string token, string sessionId, int userId);
     }
 }

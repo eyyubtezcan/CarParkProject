@@ -2,6 +2,7 @@
 using CarParkProject.Data.Repositories.Abstract;
 using CarParkProject.Data.UnitOfWorks;
 using CarParkProject.Domain.EntityModels;
+using CarParkProject.Domain.FilterModels;
 using CarParkProject.Domain.ViewModels;
 using CarParkProject.Service.Abstract;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +29,7 @@ namespace CarParkProject.Service.Concreate
 
             return null;
         }
+       
 
         public List<CustomerVM> GetAllCustomers()
         {
@@ -51,6 +53,25 @@ namespace CarParkProject.Service.Concreate
 
             return result;
 
+        }
+
+        public ServiceResult<User> GetCustumers(CustomerFilterModel filterModel)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ServiceResult<Customer> InsertCustomer(Customer customer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ServiceResult<Customer> UpdateCustomer(Customer customer)
+        {
+            throw new NotImplementedException();
+        }
+        public ServiceResult<Customer> DeleteCustomer(Customer customer)
+        {
+            throw new NotImplementedException();
         }
     }
 }

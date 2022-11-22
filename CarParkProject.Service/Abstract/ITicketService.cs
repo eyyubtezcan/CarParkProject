@@ -11,6 +11,8 @@ namespace CarParkProject.Service.Abstract
     {
         List<Ticket> GetTickets();
         Ticket GetTicket(int id);
-
+        ServiceResult<Ticket> GetTicket(Ticket ticket);
+        ServiceResult<Ticket> CheckInTicket(Vehicle vehicle);
+        ServiceResult<Ticket> CheckOutTicket(Vehicle vehicle);
     }
 }

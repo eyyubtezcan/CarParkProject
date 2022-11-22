@@ -9,7 +9,8 @@ namespace CarParkProject.Service.Abstract
 {
     public interface IPaymentService
     {
-      
+        ServiceResult<Ticket> CalculateParkingFees(int id);
+        ServiceResult<Vehicle> PayParkingFees(int id);
 
     }
 }

@@ -9,6 +9,7 @@ namespace CarParkProject.Domain.Base
     public class BaseEntity
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         
         public DateTime CreatedDate { get; set; }
@@ -16,7 +17,7 @@ namespace CarParkProject.Domain.Base
         public DateTime LastModifiedDate { get; set; }
 
 
-        public bool IsDeleted { get; set; }
+        //public bool IsDeleted { get; set; }
   
         public bool IsActive { get; set; } 
  
@@ -27,7 +28,7 @@ namespace CarParkProject.Domain.Base
         {
             CreatedDate = DateTime.Now;
             LastModifiedDate = DateTime.Now;
-            IsDeleted = false;
+            //IsDeleted = false;
             IsActive = true;
             CreatedById = 1;
             ModifiedById = 1;
